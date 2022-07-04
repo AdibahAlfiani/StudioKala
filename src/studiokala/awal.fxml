@@ -2,17 +2,48 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1360.0" style="-fx-background-color: #0A85A7;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="studiokala.AwalController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1360.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="studiokala.AwalController">
    <children>
-      <Label layoutX="586.0" layoutY="274.0" text="StudioKala">
+      <ImageView fitHeight="680.0" fitWidth="1360.0">
+         <image>
+            <Image url="@../../../../../StudioKala/StudioKala_Login.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="733.0" layoutY="550.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="106.0" style="-fx-background-color: none;" text="Sign Up" textFill="#fffdfd" textOverrun="WORD_ELLIPSIS" underline="true">
          <font>
-            <Font size="40.0" />
+            <Font name="Tw Cen MT Bold" size="19.0" />
+         </font></Button>
+      <TextField layoutX="534.0" layoutY="430.0" prefHeight="38.0" prefWidth="292.0" />
+      <TextField layoutX="534.0" layoutY="368.0" prefHeight="38.0" prefWidth="292.0" />
+      <Button blendMode="LIGHTEN" layoutX="533.0" layoutY="494.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="292.0" text="LOG IN" textFill="#021818">
+         <font>
+            <Font name="Tw Cen MT Bold" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.1347368359565735" green="0.3748771846294403" blue="0.378947377204895" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Label layoutX="534.0" layoutY="350.0" text="username" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT Bold" size="14.0" />
          </font>
       </Label>
-      <Button layoutX="589.0" layoutY="360.0" mnemonicParsing="false" text="Sign In" />
-      <Button layoutX="713.0" layoutY="360.0" mnemonicParsing="false" text="Sign Up" />
+      <Label layoutX="534.0" layoutY="413.0" text="password" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT Bold" size="14.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
